@@ -28,7 +28,8 @@ This project is a boilerplate for building a NodeJS API using TypeScript, Hono, 
 .
 ├── src/
 │   ├── controllers/
-│   │   └── todoController.ts
+        ├── todoController.ts
+│   │   └── your-controller
 │   ├── db/
 │   │   ├── db.ts
 │   │   └── schema.ts
