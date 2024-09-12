@@ -36,7 +36,7 @@ This project is a boilerplate for building a NodeJS API using TypeScript, Hono, 
 │   │   └── validator.ts
 │   ├── models/
         ├── todo.ts
-│   │   └── your-entity-model.ts
+│   │   └── your-entity-model
 │   ├── repositories/
 │   │   ├── baseRepository.ts
 │   │   ├── todoRepository.ts
