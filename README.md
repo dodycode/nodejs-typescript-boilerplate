@@ -35,13 +35,15 @@ This project is a boilerplate for building a NodeJS API using TypeScript, Hono, 
 │   ├── middleware/
 │   │   └── validator.ts
 │   ├── models/
-│   │   └── todo.ts
+        ├── todo.ts
+│   │   └── your-entity-model.ts
 │   ├── repositories/
 │   │   ├── baseRepository.ts
 │   │   ├── todoRepository.ts
-│   │   └── your-other-repository-will-be-here
+│   │   └── your-repository
 │   ├── routes/
-│   │   └── todoRoutes.ts
+        ├── todoRoutes.ts
+│   │   └── your-routes
 │   └── index.ts
 ├── .env.example
 ├── .eslintrc.js
