@@ -38,8 +38,8 @@ This project is a boilerplate for building a NodeJS API using TypeScript, Hono, 
 │   │   └── todo.ts
 │   ├── repositories/
 │   │   ├── baseRepository.ts
-│   │   ├── repositoryFactory.ts
-│   │   └── todoRepository.ts
+│   │   ├── todoRepository.ts
+│   │   └── your-other-repository-will-be-here
 │   ├── routes/
 │   │   └── todoRoutes.ts
 │   └── index.ts
