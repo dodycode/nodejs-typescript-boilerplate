@@ -28,7 +28,7 @@ This project is a boilerplate for building a NodeJS API using TypeScript, Hono, 
 .
 ├── src/
 │   ├── controllers/
-|   |    ├── todoController.ts
+|   |   ├── todoController.ts
 │   │   └── your-controller
 │   ├── db/
 │   │   ├── db.ts
@@ -36,14 +36,14 @@ This project is a boilerplate for building a NodeJS API using TypeScript, Hono, 
 │   ├── middleware/
 │   │   └── validator.ts
 │   ├── models/
-|   |    ├── todo.ts
-│   │    └── your-entity-model
+|   |   ├── todo.ts
+│   │   └── your-entity-model
 │   ├── repositories/
 │   │   ├── baseRepository.ts
 │   │   ├── todoRepository.ts
 │   │   └── your-repository
 │   ├── routes/
-|   |    ├── todoRoutes.ts
+|   |   ├── todoRoutes.ts
 │   │   └── your-routes
 │   └── index.ts
 ├── .env.example
