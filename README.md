@@ -33,7 +33,7 @@ This project is a boilerplate for building a NodeJS API using TypeScript, Hono, 
 │   │   ├── db.ts
 │   │   └── schema.ts
 │   ├── middleware/
-│   │   └── validateRequest.ts
+│   │   └── validator.ts
 │   ├── models/
 │   │   └── todo.ts
 │   ├── repositories/
