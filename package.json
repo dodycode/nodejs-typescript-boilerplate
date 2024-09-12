@@ -1,0 +1,38 @@
+{
+  "name": "nodejs-typescript-boilerplate",
+  "version": "1.0.0",
+  "description": "Boilerplate for TypeScript API with Hono, Drizzle ORM, and Zod validation",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "build": "tsc",
+    "migrate": "drizzle-kit push",
+    "lint": "eslint . --ext .ts",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "format:check": "prettier --check \"src/**/*.ts\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.5.4",
+    "@types/pg": "^8.11.9",
+    "@typescript-eslint/eslint-plugin": "^8.5.0",
+    "@typescript-eslint/parser": "^8.5.0",
+    "drizzle-kit": "^0.24.2",
+    "eslint": "^9.10.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "prettier": "^3.3.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.2"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.12.2",
+    "dotenv": "^16.4.5",
+    "drizzle-orm": "^0.33.0",
+    "hono": "^4.6.1",
+    "pg": "^8.12.0",
+    "zod": "^3.23.8"
+  }
+}
