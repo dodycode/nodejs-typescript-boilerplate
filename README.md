@@ -46,6 +46,8 @@ This project is a boilerplate for building a NodeJS API using TypeScript, Hono, 
 |   |   ├── todoRoutes.ts
 │   │   └── your-routes
 │   └── index.ts
+├── drizzle/
+│   └── your-database-migration-files
 ├── .env.example
 ├── .eslintrc.js
 ├── .gitignore
@@ -87,18 +89,47 @@ This project is a boilerplate for building a NodeJS API using TypeScript, Hono, 
      ```
      Note: You can configure postgre user in `docker-compose.yml`
 
-5. Run database migrations:
+5. Create database migrations:
+
+   ```
+   npm run generate
+   ```
+
+6. Run database migrations:
 
    ```
    npm run migrate
    ```
 
-6. Start the development server:
+7. Start the development server:
    ```
-   npm start
+   npm run dev
    ```
 
 The server should now be running on `http://localhost:3000`.
+
+## Database Management
+
+This project uses Drizzle ORM for database management. Here are the available scripts and when to use them:
+
+- `npm run generate`: Generate Drizzle migration files (run this after making changes to your schema)
+- `npm run migrate`: Run Drizzle migrations (use this for the initial setup and when you want to apply migrations)
+- `npm run push`: Push schema changes to the database (use this during development to quickly apply schema changes)
+- `npm run studio`: Open Drizzle Studio for database management
+
+### Workflow for Schema Changes
+
+1. Make changes to your schema in `/src/server/db/schema/`
+2. Run `pnpm generate` or `npm run generate` to create a new migration
+3. Run `pnpm push` or `npm run push` to apply the changes to your development database
+
+For production or when you need to keep track of migrations:
+
+1. Make changes to your schema
+2. Run `pnpm generate` or `npm run generate`
+3. Run `pnpm migrate` or `npm run migrate` to apply the migrations
+
+Remember to commit the generated migration files to your version control system.
 
 ## API Endpoints
 
