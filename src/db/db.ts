@@ -9,4 +9,6 @@ const pool = new Pool({
   connectionString: process.env.DATABASE_URL,
 });
 
-export const db: any = drizzle(pool, { schema });
+export const db = drizzle(pool, { schema });
+
+export type DbConnection = typeof db;

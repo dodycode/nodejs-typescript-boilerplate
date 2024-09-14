@@ -1,11 +1,11 @@
 // import { eq } from "drizzle-orm";
+import { db, type DbConnection } from "../db/db";
 import { todos } from "../db/schema";
 import { BaseRepository } from "./baseRepository";
-import { PostgresJsDatabase } from "drizzle-orm/postgres-js";
 
-export class TodoRepository extends BaseRepository<typeof todos> {
-  constructor(db: PostgresJsDatabase) {
-    super(db, todos);
+class TodoRepository extends BaseRepository<typeof todos, "id"> {
+  constructor(db: DbConnection) {
+    super(db, todos, "id");
   }
 
   // You can add Todo-specific methods here if needed
@@ -18,3 +18,5 @@ export class TodoRepository extends BaseRepository<typeof todos> {
   //   return result[0];
   // }
 }
+
+export const todoRepository = new TodoRepository(db);
